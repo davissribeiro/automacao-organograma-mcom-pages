@@ -1,0 +1,1338 @@
+{
+"versao": 1,
+"data_base": "2026-07-21",
+"nos": [
+{
+"id": "ministro",
+"parent": null,
+"acronym": "MCom",
+"name": "Ministro de Estado",
+"person": "Frederico de Siqueira Filho",
+"relation": "estrutura",
+"level": 0
+},
+{
+"id": "asint",
+"parent": "ministro",
+"acronym": "ASINT",
+"name": "Assessoria Especial de Assuntos Internacionais",
+"person": "Alexandre Campos Moraes",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "aspar",
+"parent": "ministro",
+"acronym": "ASPAR",
+"name": "Assessoria Especial de Assuntos Parlamentares e Federativos",
+"person": "Alvimar Marques Camacam",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "cgasp",
+"parent": "aspar",
+"acronym": "CGASP",
+"name": "Coordenação-Geral de Assuntos Parlamentares",
+"person": "",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "ascom",
+"parent": "ministro",
+"acronym": "ASCOM",
+"name": "Assessoria Especial de Comunicação Social",
+"person": "Vinicius Santos Bomediano Nogueira",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "cgcs",
+"parent": "ascom",
+"acronym": "CGCS",
+"name": "Coordenação-Geral de Comunicação Social",
+"person": "Flávia Cristina Vieira Lima",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "aeci",
+"parent": "ministro",
+"acronym": "AECI",
+"name": "Assessoria Especial de Controle Interno",
+"person": "Gil Pinto Loja Neto",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "aspad",
+"parent": "ministro",
+"acronym": "ASPAD",
+"name": "Assessoria de Participação Social e Diversidade",
+"person": "Ludymilla Cristinne dos Santos Chagas",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "conjur",
+"parent": "ministro",
+"acronym": "CONJUR",
+"name": "Consultoria Jurídica",
+"person": "Felipe Nogueira Fernandes",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "coadm",
+"parent": "conjur",
+"acronym": "COADM",
+"name": "Coordenação de Apoio Administrativo",
+"person": "Ana Claudia Bedin",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "seadm",
+"parent": "coadm",
+"acronym": "SEADM",
+"name": "Serviço de Apoio Administrativo",
+"person": "",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cgjr",
+"parent": "conjur",
+"acronym": "CGJR",
+"name": "Coordenação-Geral Jurídica de Radiodifusão",
+"person": "Vitor Carvalho Curvina Costa de Araujo",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "dirad",
+"parent": "cgjr",
+"acronym": "DIRAD",
+"name": "Divisão Jurídica de Radiodifusão",
+"person": "Alessandra Rodrigues de Castro",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cgjt",
+"parent": "conjur",
+"acronym": "CGJT",
+"name": "Coordenação-Geral Jurídica de Telecomunicações",
+"person": "Arthur Porto Carvalho",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "dijut",
+"parent": "cgjt",
+"acronym": "DIJUT",
+"name": "Divisão Jurídica de Telecomunicações",
+"person": "Luciana Silveira Teixeira",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "sejae",
+"parent": "conjur",
+"acronym": "SEJAE",
+"name": "Serviço Jurídico de Assuntos Estratégicos",
+"person": "Felipe Arruda Aguiar Sobreira da Silveira",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "crg",
+"parent": "ministro",
+"acronym": "CRG",
+"name": "Corregedoria",
+"person": "Kleber Watanabe Cunha Martins",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "cosec",
+"parent": "crg",
+"acronym": "COSEC",
+"name": "Coordenação de Serviços Correcionais",
+"person": "Cristina de Oliveira Lopes",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "gm",
+"parent": "ministro",
+"acronym": "GM",
+"name": "Gabinete do Ministro",
+"person": "Daniela Gonçalves Garcia",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "cgce",
+"parent": "gm",
+"acronym": "CGCE",
+"name": "Coordenação-Geral de Cerimonial",
+"person": "Marcia Cristina Baia",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cggm",
+"parent": "gm",
+"acronym": "CGGM",
+"name": "Coordenação-Geral do Gabinete do Ministro de Estado",
+"person": "Ênio Soares Dias",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "ouv",
+"parent": "ministro",
+"acronym": "OUV",
+"name": "Ouvidoria",
+"person": "Bruno Dantas Faria Affonso",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "coser",
+"parent": "ouv",
+"acronym": "COSER",
+"name": "Coordenação de Serviços",
+"person": "Mariana Lopes de Oliveira",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "sexec",
+"parent": "ministro",
+"acronym": "SEXEC",
+"name": "Secretaria-Executiva",
+"person": "Sônia Faustino Mendes",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "adjunto",
+"parent": "sexec",
+"acronym": "Adjunto",
+"name": "Secretário Executivo Adjunto",
+"person": "João Aloísio Vieira",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "gabex",
+"parent": "sexec",
+"acronym": "GABEX",
+"name": "Gabinete da Secretaria-Executiva",
+"person": "Ana Beatriz Souza Almeida",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "sevi",
+"parent": "sexec",
+"acronym": "SEVI",
+"name": "Subsecretaria de Governança das Entidades Vinculadas",
+"person": "Lumárya Souza de Sousa",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cgvi",
+"parent": "sevi",
+"acronym": "CGVI",
+"name": "Coordenação-Geral de Governança de Entidades Vinculadas",
+"person": "",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cogvi",
+"parent": "cgvi",
+"acronym": "COGVI",
+"name": "Coordenação de Governança de Entidades Vinculadas",
+"person": "Barbara Andrade Correa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cgsp",
+"parent": "sevi",
+"acronym": "CGSP",
+"name": "Coordenação-Geral de Serviços Postais",
+"person": "Vantuyl Barbosa Júnior",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cospo",
+"parent": "cgsp",
+"acronym": "COSPO",
+"name": "Coordenação de Serviços Postais",
+"person": "José Ademar Alexandre de Souza",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "spoa",
+"parent": "sexec",
+"acronym": "SPOA",
+"name": "Subsecretaria de Planejamento, Orçamento e Administração",
+"person": "Luciano de Mendonça Fonseca",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cggp",
+"parent": "spoa",
+"acronym": "CGGP",
+"name": "Coordenação-Geral de Gestão de Pessoas",
+"person": "Natalia Ramalho Greve",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cocpg",
+"parent": "cggp",
+"acronym": "COCPG",
+"name": "Coordenação de Cadastro e Pagamento",
+"person": "Edmundo Sousa Santos",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dicap",
+"parent": "cocpg",
+"acronym": "DICAP",
+"name": "Divisão de Cadastro de Pessoal",
+"person": "Jéssica Kelly de Morais Vianna",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "seamp",
+"parent": "dicap",
+"acronym": "SEAMP",
+"name": "Serviço de Atos e Movimentação de Pessoal",
+"person": "Sabrina Machado Ribeiro",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "dipag",
+"parent": "cocpg",
+"acronym": "DIPAG",
+"name": "Divisão de Pagamento",
+"person": "José Rodrigues Camelo",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "seofi",
+"parent": "dipag",
+"acronym": "SEOFI",
+"name": "Serviço de Execução Orçamentária e Financeira",
+"person": "Kalazan Alberto Eronides da Silva",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "sepag",
+"parent": "dipag",
+"acronym": "SEPAG",
+"name": "Serviço de Pagamento",
+"person": "Irleide Nascimento Queiroz Vidal",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "seaad",
+"parent": "cocpg",
+"acronym": "SEAAD",
+"name": "Serviço de Apoio Administrativo",
+"person": "Amanda Alves Araujo",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "codep",
+"parent": "cggp",
+"acronym": "CODEP",
+"name": "Coordenação de Desenvolvimento de Pessoas",
+"person": "Euysderson Aragao Borges",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "didep",
+"parent": "codep",
+"acronym": "DIDEP",
+"name": "Divisão de Desenvolvimento de Pessoas",
+"person": "Marcelo Vargas da Silva",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "seged",
+"parent": "didep",
+"acronym": "SEGED",
+"name": "Serviço de Gestão de Desempenho",
+"person": "Milena Santos de Oliveira",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "colab",
+"parent": "cggp",
+"acronym": "COLAB",
+"name": "Coordenação de Legislação, Aposentadoria e Benefícios",
+"person": "Ducilene Miranda Leite",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dibap",
+"parent": "colab",
+"acronym": "DIBAP",
+"name": "Divisão de Benefícios, Aposentadoria e Pensão",
+"person": "Cesar Roberto Moraes Oliveira",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "seben",
+"parent": "dibap",
+"acronym": "SEBEN",
+"name": "Serviço de Benefícios",
+"person": "Cristiane dos Santos Costa",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "dinor",
+"parent": "colab",
+"acronym": "DINOR",
+"name": "Divisão de Normas",
+"person": "Raquel de Assis Mayrink",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cgpof",
+"parent": "spoa",
+"acronym": "CGPOF",
+"name": "Coordenação-Geral de Planejamento, Orçamento e Finanças",
+"person": "Ricardo Brito Portal e Silva",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cofin",
+"parent": "cgpof",
+"acronym": "COFIN",
+"name": "Coordenação Financeira",
+"person": "Samilla Silva Santos",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "difin",
+"parent": "cofin",
+"acronym": "DIFIN",
+"name": "Divisão de Programação Financeira",
+"person": "George Diogo Alcantara Barbosa",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cotab",
+"parent": "cgpof",
+"acronym": "COTAB",
+"name": "Coordenação de Contabilidade",
+"person": "Erico Gustavo Tomaz da Silva",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diacc",
+"parent": "cotab",
+"acronym": "DIACC",
+"name": "Divisão de Análise Contábil e de Custos",
+"person": "Ligia de Almeida Silva",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cogep",
+"parent": "cgpof",
+"acronym": "COGEP",
+"name": "Coordenação de Gestão Estratégica e Planejamento",
+"person": "",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coorc",
+"parent": "cgpof",
+"acronym": "COORC",
+"name": "Coordenação de Orçamento",
+"person": "Odete Yukari Hirata Emura",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dipac",
+"parent": "coorc",
+"acronym": "DIPAC",
+"name": "Divisão de Programação e Acompanhamento Orçamentário",
+"person": "André Fernandes Chaves",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cgrl",
+"parent": "spoa",
+"acronym": "CGRL",
+"name": "Coordenação-Geral de Recursos Logísticos",
+"person": "Lorena Vieira da Silva Santos",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coeof",
+"parent": "cgrl",
+"acronym": "COEOF",
+"name": "Coordenação de Execução Orçamentária e Financeira",
+"person": "Joyce Paula Barbosa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dicof",
+"parent": "coeof",
+"acronym": "DICOF",
+"name": "Divisão de Conformidade",
+"person": "Juliana Fernandes da Silva",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "diefi",
+"parent": "coeof",
+"acronym": "DIEFI",
+"name": "Divisão de Execução Financeira",
+"person": "Raquel Alves Fleury Santana",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "sefip",
+"parent": "diefi",
+"acronym": "SEFIP",
+"name": "Serviço de Controle Financeiro e Pagamentos",
+"person": "Fernanda Nogueira",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "dieor",
+"parent": "coeof",
+"acronym": "DIEOR",
+"name": "Divisão de Execução Orçamentária",
+"person": "Rosana Holanda Martins",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "coire",
+"parent": "cgrl",
+"acronym": "COIRE",
+"name": "Coordenação de Instrumentos de Repasse",
+"person": "Cláudia Moraes Mendes",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "colcc",
+"parent": "cgrl",
+"acronym": "COLCC",
+"name": "Coordenação de Licitações, Compras e Contratos",
+"person": "Henrique Ulisses de Abreu",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dicon",
+"parent": "colcc",
+"acronym": "DICON",
+"name": "Divisão de Contratos",
+"person": "Erika Tavares Aguirres",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "secon",
+"parent": "dicon",
+"acronym": "SECON",
+"name": "Serviço de Contratos",
+"person": "Daniella Silva Cardoso",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "dilic",
+"parent": "colcc",
+"acronym": "DILIC",
+"name": "Divisão de Licitações e Compras",
+"person": "Luan Monteiro da Costa Reis",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "selic",
+"parent": "dilic",
+"acronym": "SELIC",
+"name": "Serviço de Licitações",
+"person": "Givanildo Sousa de Santana",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "colop",
+"parent": "cgrl",
+"acronym": "COLOP",
+"name": "Coordenação de Logística e Patrimônio",
+"person": "Paloma Teixeira Mendes",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diamp",
+"parent": "colop",
+"acronym": "DIAMP",
+"name": "Divisão de Apoio Administrativo, Manutenção Predial e Patrimônio",
+"person": "Patrícia Cristina Moreira Veloso",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "seapa",
+"parent": "diamp",
+"acronym": "SEAPA",
+"name": "Serviço de Almoxarifado e Patrimônio",
+"person": "Emily Alves dos Santos",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "seipa",
+"parent": "diamp",
+"acronym": "SEIPA",
+"name": "Serviço de Infraestrutura Predial e Apoio Administrativo",
+"person": "",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "didip",
+"parent": "cgrl",
+"acronym": "DIDIP",
+"name": "Divisão de Diárias e Passagens",
+"person": "Daniella Carvalho Alcoforado",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "sti",
+"parent": "sexec",
+"acronym": "STI",
+"name": "Subsecretaria de Tecnologia da Informação",
+"person": "Gustavo Henrique de Souto Silva",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cggi",
+"parent": "sti",
+"acronym": "CGGI",
+"name": "Coordenação-Geral de Gestão da Informação",
+"person": "",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coged",
+"parent": "cggi",
+"acronym": "COGED",
+"name": "Coordenação de Gestão Estratégica de Dados",
+"person": "Mauricio Aldenor Souza dos Santos",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cogid",
+"parent": "cggi",
+"acronym": "COGID",
+"name": "Coordenação de Gestão da Informação e de Documentos",
+"person": "Taric de Oliveira Sousa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diged",
+"parent": "cogid",
+"acronym": "DIGED",
+"name": "Divisão de Gestão de Documentos",
+"person": "Fernando Franca e Gomes de Miranda",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "sepro",
+"parent": "diged",
+"acronym": "SEPRO",
+"name": "Serviço de Protocolo",
+"person": "Helenúcia Bezerra de Araújo",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "dipre",
+"parent": "cogid",
+"acronym": "DIPRE",
+"name": "Divisão de Processo Eletrônico",
+"person": "Edson Ferreira Venâncio Coelho da Silva",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "sespe",
+"parent": "dipre",
+"acronym": "SESPE",
+"name": "Serviço de Suporte em Processo Eletrônico",
+"person": "Juliana Santos Sales",
+"relation": "estrutura",
+"level": 6
+},
+{
+"id": "cgti",
+"parent": "sti",
+"acronym": "CGTI",
+"name": "Coordenação-Geral de Tecnologia da Informação e Comunicação",
+"person": "Tomé Luiz da Silva Couto",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cogti",
+"parent": "cgti",
+"acronym": "COGTI",
+"name": "Coordenação de Governança de Tecnologia da Informação",
+"person": "",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dicat",
+"parent": "cogti",
+"acronym": "DICAT",
+"name": "Divisão de Contratos e Aquisições de Tecnologia da Informação",
+"person": "Gustavo da Silva Andrade",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "digti",
+"parent": "cogti",
+"acronym": "DIGTI",
+"name": "Divisão de Gestão e Governança de Tecnologia da Informação",
+"person": "Fábio Pontes de Souza",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "coins",
+"parent": "cgti",
+"acronym": "COINS",
+"name": "Coordenação de Infraestrutura e Serviços de Tecnologia da Informação",
+"person": "Cicero Adriano Farias Santana Alves",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diatu",
+"parent": "coins",
+"acronym": "DIATU",
+"name": "Divisão de Atendimento aos Usuários",
+"person": "Gustavo de Sousa Gomes",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "disti",
+"parent": "coins",
+"acronym": "DISTI",
+"name": "Divisão de Serviços de Tecnologia da Informação",
+"person": "Jair Rodrigues Fernandes",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "coseg",
+"parent": "cgti",
+"acronym": "COSEG",
+"name": "Coordenação de Segurança da Informação",
+"person": "Leandro Bolzan Béria",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cosin",
+"parent": "cgti",
+"acronym": "COSIN",
+"name": "Coordenação de Sistemas de Informação",
+"person": "Wesin Ribeiro Alves",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dipsi",
+"parent": "cosin",
+"acronym": "DIPSI",
+"name": "Divisão de Projetos de Sistemas",
+"person": "Arlindo Souza Amaral Neto",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "disus",
+"parent": "cosin",
+"acronym": "DISUS",
+"name": "Divisão de Sustentação de Sistemas",
+"person": "Willian da Silva Ferreira",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "serad",
+"parent": "ministro",
+"acronym": "SERAD",
+"name": "Secretaria de Radiodifusão",
+"person": "Wilson Diniz Wellisch",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "deirf",
+"parent": "serad",
+"acronym": "DEIRF",
+"name": "Departamento de Inovação, Regulamentação e Fiscalização",
+"person": "Tawfic Awwad Junior",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cgfm",
+"parent": "deirf",
+"acronym": "CGFM",
+"name": "Coordenação-Geral de Fiscalização, Monitoramento e Apuração de Infrações",
+"person": "Carolina Aumondi Costa Silva Ratkiewicz",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coapi",
+"parent": "cgfm",
+"acronym": "COAPI",
+"name": "Coordenação de Apuração de Infrações de Serviços de Radiodifusão",
+"person": "Ana Clara Silva Lopes",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cofim",
+"parent": "cgfm",
+"acronym": "COFIM",
+"name": "Coordenação de Fiscalização e Monitoramento de Serviços de Radiodifusão",
+"person": "Karina César da Silveira Santos Menezes",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cgrs",
+"parent": "deirf",
+"acronym": "CGRS",
+"name": "Coordenação-Geral de Inovação, Regulamentação e Sistemas",
+"person": "Roberto Ramos Colletti",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "corin",
+"parent": "cgrs",
+"acronym": "CORIN",
+"name": "Coordenação Regulamentação e Inovação",
+"person": "Gabriel Smidt Valderrama",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cosid",
+"parent": "cgrs",
+"acronym": "COSID",
+"name": "Coordenação de Sistemas, Dados e Documentação de Radiodifusão",
+"person": "Thiago Rizza Silva",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "derap",
+"parent": "serad",
+"acronym": "DERAP",
+"name": "Departamento de Radiodifusão Privada",
+"person": "Whendell Pereira de Souza",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cglo",
+"parent": "derap",
+"acronym": "CGLO",
+"name": "Coordenação-Geral de Licitação e Outorga de Radiodifusão Privada",
+"person": "Cristina de Oliveira Souza",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cofao",
+"parent": "cglo",
+"acronym": "COFAO",
+"name": "Coordenação de Formalização e Adaptação de Outorga de Radiodifusão Privada",
+"person": "Lianna Evangelista de Sousa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diaou",
+"parent": "cofao",
+"acronym": "DIAOU",
+"name": "Divisão de Adaptação de Outorga de Radiodifusão Privada",
+"person": "Fabiano Costa",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "colan",
+"parent": "cglo",
+"acronym": "COLAN",
+"name": "Coordenação de Licitação e Serviços Ancilares de Radiodifusão Privada",
+"person": "William de Souza Correa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "disan",
+"parent": "colan",
+"acronym": "DISAN",
+"name": "Divisão de Serviços Ancilares de Radiodifusão Privada",
+"person": "Reginaldo Francisco dos Santos",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cgpo",
+"parent": "derap",
+"acronym": "CGPO",
+"name": "Coordenação-Geral de Pós-Outorga de Radiodifusão Privada",
+"person": "Judson José Teles de Sousa Confortin",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coato",
+"parent": "cgpo",
+"acronym": "COATO",
+"name": "Coordenação de Atos de Radiodifusão Privada",
+"person": "Riciele Milani",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diarp",
+"parent": "coato",
+"acronym": "DIARP",
+"name": "Divisão de Atos de Radiodifusão Privada",
+"person": "Robson Silva da Silveira",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "corep",
+"parent": "cgpo",
+"acronym": "COREP",
+"name": "Coordenação de Renovação de Outorga de Radiodifusão Privada",
+"person": "Ricardo Henrique Pereira Nolasco",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "direp",
+"parent": "corep",
+"acronym": "DIREP",
+"name": "Divisão de Renovação de Outorga de Radiodifusão Privada",
+"person": "Kênia da Silva Vieira",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "depub",
+"parent": "serad",
+"acronym": "DEPUB",
+"name": "Departamento de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Daniela Naufel Schettino",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cgaj",
+"parent": "depub",
+"acronym": "CGAJ",
+"name": "Coordenação-Geral de Assuntos Jurídicos de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Alexandre Miranda Freire de Oliveira Barros",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "corec",
+"parent": "cgaj",
+"acronym": "COREC",
+"name": "Coordenação de Outorga de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Vilma de Fátima Alvarenga Fanis",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "copec",
+"parent": "cgaj",
+"acronym": "COPEC",
+"name": "Coordenação de Pós-Outorga e Renovação dos Serviços de Radiodifusão Pública e Comunitária",
+"person": "Letícia Ribeiro Cardoso",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cgep",
+"parent": "depub",
+"acronym": "CGEP",
+"name": "Coordenação-Geral de Engenharia de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Ricardo Mesquita Muniz",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cotan",
+"parent": "cgep",
+"acronym": "COTAN",
+"name": "Coordenação Técnica de Outorgas de Serviços Ancilares de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Vanessa Cristina Faria Gomes Monteiro",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coata",
+"parent": "cgep",
+"acronym": "COATA",
+"name": "Coordenação de Análises Técnicas e Adaptação de Outorga de Radiodifusão Pública, Comunitária e Estatal",
+"person": "Mauro Abud Filho",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "gsrad",
+"parent": "serad",
+"acronym": "GSRAD",
+"name": "Gabinete da Secretaria de Radiodifusão",
+"person": "Márcia Maria Torres Fernandes",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cplsr",
+"parent": "serad",
+"acronym": "CPLSR",
+"name": "Comissão Permanente de Licitação de Serviços de Radiodifusão",
+"person": "",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "setel",
+"parent": "ministro",
+"acronym": "SETEL",
+"name": "Secretaria de Telecomunicações",
+"person": "Hermano Barros Tercius",
+"relation": "estrutura",
+"level": 1
+},
+{
+"id": "deinv",
+"parent": "setel",
+"acronym": "DEINV",
+"name": "Departamento de Investimento e Inovação",
+"person": "Marcelo Alves da Silva",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cgdt",
+"parent": "deinv",
+"acronym": "CGDT",
+"name": "Coordenação-Geral de Apoio ao Desenvolvimento Tecnológico",
+"person": "Marcelo Leandro Ferreira",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coagt",
+"parent": "cgdt",
+"acronym": "COAGT",
+"name": "Coordenação de Apoio à Gestão",
+"person": "",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coope",
+"parent": "cgdt",
+"acronym": "COOPE",
+"name": "Coordenação de Operação",
+"person": "Cristina Letiele Borges Figueredo Otsuka",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cgai",
+"parent": "deinv",
+"acronym": "CGAI",
+"name": "Coordenação-Geral de Aprimoramento do Ambiente de Investimentos",
+"person": "",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coait",
+"parent": "cgai",
+"acronym": "COAIT",
+"name": "Coordenação de Apoio ao Investimento",
+"person": "Fernando Cesar Cysne Furquin",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coart",
+"parent": "cgai",
+"acronym": "COART",
+"name": "Coordenação de Aspectos Regulatórios",
+"person": "Haitam Laboissiere Naser",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coinv",
+"parent": "cgai",
+"acronym": "COINV",
+"name": "Coordenação de Políticas de Investimento",
+"person": "Noely Guedes Sirqueira",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "deset",
+"parent": "setel",
+"acronym": "DESET",
+"name": "Departamento de Política Setorial",
+"person": "Juliano Stanzani",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "cgat",
+"parent": "deset",
+"acronym": "CGAT",
+"name": "Coordenação-Geral de Acompanhamento Regulatório de Telecomunicações",
+"person": "Renato Gomes Alves de Oliveira",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cgpp",
+"parent": "deset",
+"acronym": "CGPP",
+"name": "Coordenação-Geral de Políticas Públicas para Serviços de Telecomunicações",
+"person": "Vinicius Borges Albernaz",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "depin",
+"parent": "setel",
+"acronym": "DEPIN",
+"name": "Departamento de Projetos de Infraestrutura e de Inclusão Digital",
+"person": "Eduardo Takafashi de Alcantara",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "copao",
+"parent": "depin",
+"acronym": "COPAO",
+"name": "Coordenação de Projetos e Acompanhamento Administrativo-Orçamentário",
+"person": "Natália Fernandes Matano",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "cgec",
+"parent": "depin",
+"acronym": "CGEC",
+"name": "Coordenação-Geral de Estudos e Conectividade",
+"person": "André Gustavo Farias Gonçalves",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "copco",
+"parent": "cgec",
+"acronym": "COPCO",
+"name": "Coordenação de Projetos de Conectividade",
+"person": "Jane Braga Pinto Pedroso",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "seacp",
+"parent": "copco",
+"acronym": "SEACP",
+"name": "Serviço de Acompanhamento de Contratos e Parcerias",
+"person": "Marcos Vinícius Rodrigues Sampaio",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "cgid",
+"parent": "depin",
+"acronym": "CGID",
+"name": "Coordenação-Geral de Inclusão Digital",
+"person": "Gustavo André Fernandes Lima",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "diatp",
+"parent": "cgid",
+"acronym": "DIATP",
+"name": "Divisão de Acompanhamento Técnico de Projetos",
+"person": "Daliane Madureira Serra",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "diart",
+"parent": "cgid",
+"acronym": "DIART",
+"name": "Divisão de Articulação",
+"person": "Raiane Carvalho de Sousa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "dipar",
+"parent": "cgid",
+"acronym": "DIPAR",
+"name": "Divisão de Projetos e Parcerias",
+"person": "Maurício Santiago de Sousa",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "cgpi",
+"parent": "depin",
+"acronym": "CGPI",
+"name": "Coordenação-Geral de Projetos de Infraestrutura",
+"person": "Angelo Cesar Lorenzo Alves",
+"relation": "estrutura",
+"level": 3
+},
+{
+"id": "coesi",
+"parent": "cgpi",
+"acronym": "COESI",
+"name": "Coordenação de Estudos e Sistemas",
+"person": "Rafael Cardoso Reis",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "coinf",
+"parent": "cgpi",
+"acronym": "COINF",
+"name": "Coordenação de Infraestrutura de Rede",
+"person": "Maria Auxiliadora Rodrigues Dias",
+"relation": "estrutura",
+"level": 4
+},
+{
+"id": "seinf",
+"parent": "coinf",
+"acronym": "SEINF",
+"name": "Serviço de Infraestrutura",
+"person": "",
+"relation": "estrutura",
+"level": 5
+},
+{
+"id": "gatel",
+"parent": "setel",
+"acronym": "GATEL",
+"name": "Gabinete da Secretaria de Telecomunicações",
+"person": "Marcelo Romão Manhães de Azevedo",
+"relation": "estrutura",
+"level": 2
+},
+{
+"id": "anatel",
+"parent": "ministro",
+"acronym": "ANATEL",
+"name": "Agência Nacional de Telecomunicações",
+"person": "",
+"relation": "vinculada",
+"level": 1
+},
+{
+"id": "correios",
+"parent": "ministro",
+"acronym": "CORREIOS",
+"name": "Empresa Brasileira de Correios e Telégrafos",
+"person": "",
+"relation": "vinculada",
+"level": 1
+},
+{
+"id": "telebras",
+"parent": "ministro",
+"acronym": "TELEBRAS",
+"name": "Telecomunicações Brasileiras S.A.",
+"person": "",
+"relation": "vinculada",
+"level": 1
+}
+]
+}
