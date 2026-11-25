@@ -1,0 +1,74 @@
+name: Consulta diária ao DOU
+
+on:
+  schedule:
+    - cron: '0 14 * * 1-5'   # 11h de Brasília, de segunda a sexta (o ZIP do dia sai por volta das 9h50)
+  workflow_dispatch:
+    inputs:
+      meses:
+        description: 'Opcional. Meses MMAAAA separados por espaço (vazio = mês atual)'
+        required: false
+        default: ''
+      desde:
+        description: 'Opcional. Reler atos desde AAAA-MM-DD (vazio = usa dados/estado.json)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: organograma-dou
+  cancel-in-progress: false
+
+jobs:
+  consultar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MESES: ${{ github.event.inputs.meses }}
+      DESDE: ${{ github.event.inputs.desde }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 1) Baixar o ZIP da Seção 2 do DOU
+        timeout-minutes: 8
+        run: |
+          if [ -z "$MESES" ]; then python -u scripts/baixar_dou.py --auto; else python -u scripts/baixar_dou.py $MESES; fi
+
+      - name: 2) Procurar mudanças de responsáveis
+        id: consulta
+        timeout-minutes: 4
+        run: |
+          if [ -z "$DESDE" ]; then python -u scripts/consultar.py; else python -u scripts/consultar.py --desde "$DESDE"; fi
+
+      - name: 3) Gravar os novos responsáveis (sem aprovação)
+        id: aplicar
+        if: steps.consulta.outputs.mudou == 'true'
+        run: python -u scripts/aplicar.py --ids todas
+
+      - name: 4) Guardar no repositório
+        run: |
+          date -u +"%Y-%m-%dT%H:%MZ" > dados/ultima_execucao.txt
+          git config user.name "robo-organograma"
+          git config user.email "robo-organograma@users.noreply.github.com"
+          git add -A data dados propostas || true
+          if git diff --cached --quiet; then echo "Nada a guardar."; else git commit -m "Consulta ao DOU ($(date +%F))" && git push; fi
+
+      - name: 5) Avisar (abre uma Issue, que chega no seu e-mail)
+        if: steps.aplicar.outputs.avisar == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create --title "Organograma: ${{ steps.aplicar.outputs.qtd }} responsável(is) atualizado(s) pelo DOU" --body-file propostas/aviso.txt
+
+      - name: 6) Guardar o relatório completo da consulta
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: consulta-dou
+          path: |
+            propostas/ultima_consulta.txt
+            paginas
+          if-no-files-found: ignore
