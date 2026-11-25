@@ -14,6 +14,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--estrutura", default="dados/estrutura.json")
     ap.add_argument("--resp", default="data/responsaveis.json")
+    ap.add_argument("--fotos", default="data/fotos.json")
     ap.add_argument("--pendente", default="propostas/pendente.json")
     ap.add_argument("--estado", default="dados/estado.json")
     ap.add_argument("--historico", default="dados/historico.json")
@@ -41,10 +42,14 @@ def main():
     nos_atual = dou.estado_atual(nos_base, resp)
     lido = datetime.strptime(pend.get("ultimo_dia_lido", pend["janela_fim"]), "%Y-%m-%d").date()
     novo, aplicadas, puladas = dou.aplicar_no_json(resp, nos_base, nos_atual, quer, lido.isoformat())
+    faltam_foto = dou.sem_foto(aplicadas, dou.carregar_fotos(a.fotos),
+                               {i: (n.get("person") or "") for i, n in nos_base.items()})
     for m, motivo in puladas:
         print(f"PULADA {m['n']} ({m['sigla']}): {motivo}")
     for m in aplicadas:
         print(f"OK {m['n']}: {m['sigla']}: {m['de'] or '(vago)'} -> {m['para'] or '(vago)'}")
+    for f in faltam_foto:
+        print(f"SEM FOTO: {f['sigla']}: {f['pessoa']}" + (f" (parecido: {'; '.join(f['parecidos'])})" if f["parecidos"] else ""))
 
     if any(i not in nos_base for i in novo["unidades"]):
         sys.exit("ERRO: o JSON ficou com uma unidade que não existe na estrutura. Nada foi gravado.")
@@ -61,11 +66,11 @@ def main():
     os.makedirs(pasta, exist_ok=True)
     open(os.path.join(pasta, "aviso.txt"), "w", encoding="utf-8").write(
         dou.relatorio(aplicadas, pend.get("sem_unidade", []), pend.get("revisar", []), ini_aviso, lido,
-                      estado.get("base", ""), aplicado=True, puladas=puladas))
+                      estado.get("base", ""), aplicado=True, puladas=puladas, sem_foto=faltam_foto))
     saida = os.environ.get("GITHUB_OUTPUT")
     if saida:
         with open(saida, "a") as f:
-            f.write(f"avisar=true\nqtd={len(aplicadas)}\n")
+            f.write(f"avisar=true\nqtd={len(aplicadas)}\nsem_foto={len(faltam_foto)}\n")
 
     ids_aplicados = {m["n"] for m in aplicadas}
     restantes = [m for m in todas if m["n"] not in ids_aplicados and not any(x["id"] in novos_ign for x in m["atos"])]
@@ -88,3 +93,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
