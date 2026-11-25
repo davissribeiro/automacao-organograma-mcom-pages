@@ -1,1 +1,175 @@
-[]
+[
+ {
+  "aplicado_em": "2026-11-25 15:34",
+  "mudancas": [
+   {
+    "no": "cgai",
+    "sigla": "CGAI",
+    "unidade": "Coordenação-Geral de Aprimoramento do Ambiente de Investimentos",
+    "de": "",
+    "para": "Patrick Leonardo de Faria e Silva",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24174857",
+      "data": "30/07/2026",
+      "titulo": "PORTARIA MCOM Nº 249, DE 29 DE JULHO DE 2026"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "no": "seinf",
+    "sigla": "SEINF",
+    "unidade": "Serviço de Infraestrutura",
+    "de": "",
+    "para": "Lorran Moreira Silva",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24178642",
+      "data": "31/07/2026",
+      "titulo": "PORTARIA MCOM Nº 248, de 29 DE juLho de 2026"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "no": "colop",
+    "sigla": "COLOP",
+    "unidade": "Coordenação de Logística e Patrimônio",
+    "de": "Paloma Teixeira Mendes",
+    "para": "Givanildo Sousa de Santana",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24183236",
+      "data": "03/08/2026",
+      "titulo": "PORTARIA MCOM Nº 251, de 31 DE juLho de 2026"
+     },
+     {
+      "id": "24183275",
+      "data": "03/08/2026",
+      "titulo": "PORTARIA MCOM Nº 252, DE 31 DE JULHO DE 2026"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "no": "selic",
+    "sigla": "SELIC",
+    "unidade": "Serviço de Licitações",
+    "de": "Givanildo Sousa de Santana",
+    "para": "Sabrina Ferreira de Sousa",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24183275",
+      "data": "03/08/2026",
+      "titulo": "PORTARIA MCOM Nº 252, DE 31 DE JULHO DE 2026"
+     },
+     {
+      "id": "24223790",
+      "data": "12/08/2026",
+      "titulo": "PORTARIA MCOM Nº 261, DE 11 DE AGOSTO DE 2026"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "no": "seipa",
+    "sigla": "SEIPA",
+    "unidade": "Serviço de Infraestrutura Predial e Apoio Administrativo",
+    "de": "",
+    "para": "José Reinaldo Tavares Pontes",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24190731",
+      "data": "05/08/2026",
+      "titulo": "PORTARIA MCOM Nº 256, de 4 de agosto de 2026"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "no": "cgvi",
+    "sigla": "CGVI",
+    "unidade": "Coordenação-Geral de Governança de Entidades Vinculadas",
+    "de": "",
+    "para": "Carlos Eduardo Lacerda Veiga",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24236465",
+      "data": "14/08/2026",
+      "titulo": "PORTARIA MCOM N° 264, DE 13 DE AGOSTO DE 2026"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "no": "coagt",
+    "sigla": "COAGT",
+    "unidade": "Coordenação de Apoio à Gestão",
+    "de": "",
+    "para": "Fernando Cezar Cysne Furquin",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24333468",
+      "data": "08/09/2026",
+      "titulo": "PORTARIA MCOM N° 291, DE 4 DE SETEMBRO DE 2026"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "no": "coait",
+    "sigla": "COAIT",
+    "unidade": "Coordenação de Apoio ao Investimento",
+    "de": "Fernando Cesar Cysne Furquin",
+    "para": "Thiago Campos de Moraes",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24333468",
+      "data": "08/09/2026",
+      "titulo": "PORTARIA MCOM N° 291, DE 4 DE SETEMBRO DE 2026"
+     },
+     {
+      "id": "24333567",
+      "data": "08/09/2026",
+      "titulo": "PORTARIA MCOM N° 292, DE 4 DE SETEMBRO DE 2026"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "no": "cogep",
+    "sigla": "COGEP",
+    "unidade": "Coordenação de Gestão Estratégica e Planejamento",
+    "de": "",
+    "para": "Maísa Lima Brito",
+    "confianca": "alta",
+    "topo": false,
+    "atos": [
+     {
+      "id": "24439270",
+      "data": "01/10/2026",
+      "titulo": "PORTARIA MCOM Nº 332, DE 24 DE SETEMBRO DE 2026"
+     }
+    ],
+    "n": 9
+   }
+  ]
+ }
+]

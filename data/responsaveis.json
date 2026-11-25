@@ -1,1 +1,60 @@
-{"versao":1,"unidades":{}}
+{
+ "versao": 1,
+ "ate": "2026-11-24",
+ "unidades": {
+  "cgai": {
+   "person": "Patrick Leonardo de Faria e Silva",
+   "sigla": "CGAI",
+   "desde": "2026-07-30",
+   "ato": "24174857"
+  },
+  "cgvi": {
+   "person": "Carlos Eduardo Lacerda Veiga",
+   "sigla": "CGVI",
+   "desde": "2026-08-14",
+   "ato": "24236465"
+  },
+  "coagt": {
+   "person": "Fernando Cezar Cysne Furquin",
+   "sigla": "COAGT",
+   "desde": "2026-09-08",
+   "ato": "24333468"
+  },
+  "coait": {
+   "person": "Thiago Campos de Moraes",
+   "sigla": "COAIT",
+   "desde": "2026-09-08",
+   "ato": "24333567"
+  },
+  "cogep": {
+   "person": "Maísa Lima Brito",
+   "sigla": "COGEP",
+   "desde": "2026-10-01",
+   "ato": "24439270"
+  },
+  "colop": {
+   "person": "Givanildo Sousa de Santana",
+   "sigla": "COLOP",
+   "desde": "2026-08-03",
+   "ato": "24183275"
+  },
+  "seinf": {
+   "person": "Lorran Moreira Silva",
+   "sigla": "SEINF",
+   "desde": "2026-07-31",
+   "ato": "24178642"
+  },
+  "seipa": {
+   "person": "José Reinaldo Tavares Pontes",
+   "sigla": "SEIPA",
+   "desde": "2026-08-05",
+   "ato": "24190731"
+  },
+  "selic": {
+   "person": "Sabrina Ferreira de Sousa",
+   "sigla": "SELIC",
+   "desde": "2026-08-12",
+   "ato": "24223790"
+  }
+ }
+}
