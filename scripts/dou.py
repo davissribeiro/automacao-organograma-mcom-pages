@@ -86,6 +86,53 @@ def estado_atual(nos_base, resp):
     return nos
 
 
+# ---------------------------------------------------------------- fotos (data/fotos.json)
+def carregar_fotos(caminho):
+    """data/fotos.json: nome (em forma de chave) -> endereco da foto no Quem e Quem. Falta ou erro = sem fotos."""
+    if os.path.exists(caminho):
+        try:
+            obj = json.load(open(caminho, encoding="utf-8"))
+            if isinstance(obj, dict) and isinstance(obj.get("fotos"), dict):
+                return obj
+        except (OSError, ValueError):
+            pass
+    return {"fotos": {}}
+
+
+def chave_foto(s):
+    """Mesma regra da pagina e do script gerar-fotos-console: sem acento, minusculas, sem parenteses, so letras."""
+    t = re.sub(r"\(.*?\)", " ", sem_acento(s).lower())
+    t = re.sub(r"[^a-z ]+", " ", t)
+    return " ".join(t.split())
+
+
+def sem_foto(aplicadas, fotos, nomes_base=None):
+    """Pessoas que acabaram de entrar numa unidade e nao tem foto em fotos.json.
+    A pagina procura a foto pelo nome completo igual; por isso, quem so tem nome parecido (ex.: Marcelo Vargas
+    x Marcelo Alves) fica sem foto, e a Issue mostra o parecido para voce conferir.
+    nomes_base: {id da unidade: responsavel da planilha}. Quem volta ao nome da planilha mantem a foto embutida na pagina."""
+    mapa = {}
+    for k, v in (fotos.get("fotos") or {}).items():
+        mapa[chave_foto(k)] = (v.get("nome") if isinstance(v, dict) else "") or k
+    faltam, vistos = [], set()
+    for m in aplicadas:
+        nome = m.get("para") or ""
+        k = chave_foto(nome)
+        if not k or k in mapa or k in vistos:
+            continue
+        if nomes_base and mesma_pessoa(nome, nomes_base.get(m["no"], "")):
+            continue
+        vistos.add(k)
+        t = k.split()
+        parecidos = []
+        for ok, nm in mapa.items():
+            o = ok.split()
+            if len(t) >= 2 and len(o) >= 2 and t[0] == o[0] and t[-1] == o[-1]:
+                parecidos.append(nm)
+        faltam.append({"sigla": m["sigla"], "unidade": m["unidade"], "pessoa": nome, "parecidos": parecidos})
+    return faltam
+
+
 # ---------------------------------------------------------------- leitura dos atos
 def _paragrafos(texto):
     t = re.sub(r"</p>|<br\s*/?>", "\n", texto or "", flags=re.I)
@@ -359,7 +406,7 @@ def aplicar_no_json(resp, nos_base, nos_atual, mudancas, ate_iso):
 
 
 # ---------------------------------------------------------------- relatorio
-def relatorio(mudancas, ledger, revisar, janela_ini, janela_fim, base_txt, aplicado=False, puladas=None):
+def relatorio(mudancas, ledger, revisar, janela_ini, janela_fim, base_txt, aplicado=False, puladas=None, sem_foto=None):
     L = []
     L.append("RESPONSÁVEIS DO ORGANOGRAMA DO MCOM ATUALIZADOS COM ATOS DO DOU" if aplicado
              else "MUDANÇAS DO DOU AINDA NÃO APLICADAS NO ORGANOGRAMA DO MCOM")
@@ -387,6 +434,16 @@ def relatorio(mudancas, ledger, revisar, janela_ini, janela_fim, base_txt, aplic
     elif not puladas:
         L.append("Nenhuma mudança de responsável encontrada.")
         L.append("")
+    if sem_foto:
+        L.append(f"SEM FOTO NO PAINEL ({len(sem_foto)})")
+        L.append("Entraram agora e não têm foto em data/fotos.json:")
+        for f in sem_foto:
+            L.append(f"- {f['sigla']} — {f['unidade']}: {f['pessoa']}")
+            for p in f.get("parecidos", []):
+                L.append(f"    nome parecido no Quem é Quem: {p} (não usado: o painel só aceita o nome completo igual)")
+        L.append("Para incluir: abra o Quem é Quem do MCom, expanda todas as áreas, rode o script scripts/gerar_fotos_console.js no Console (F12)")
+        L.append("e cole o resultado em data/fotos.json. Se a pessoa não tiver foto lá, a unidade fica sem foto, como hoje.")
+        L.append("")
     if puladas:
         L.append(f"NÃO APLICADAS ({len(puladas)})")
         for m, motivo in puladas:
@@ -410,3 +467,4 @@ def relatorio(mudancas, ledger, revisar, janela_ini, janela_fim, base_txt, aplic
     else:
         L.append("Estas mudanças continuam pendentes e serão tentadas de novo na próxima consulta.")
     return "\n".join(L)
+
